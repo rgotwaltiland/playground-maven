@@ -3,7 +3,9 @@ package com.iland.rgotwalt;
 public class Main {
 
     public static void main(String[ ] args) {
-        System.out.println("Hello World");
+        String appVersion = PomInspector.getAppVersion();
+
+        System.out.println(String.format("Currently on version: \"%s\"", appVersion));
     }
 
 }
