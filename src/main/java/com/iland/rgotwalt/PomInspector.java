@@ -21,6 +21,10 @@ public class PomInspector {
         catch (IOException ioException) { }
     }
 
+    public static String getDisplayName() {
+        return applicationProperties.getProperty("application.displayName");
+    }
+
     public static String getAppVersion() {
         return applicationProperties.getProperty("application.version");
     }
